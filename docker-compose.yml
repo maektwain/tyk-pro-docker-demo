@@ -3,7 +3,7 @@ services:
     tyk-dashboard:
         image: tykio/tyk-dashboard:latest
         ports:
-            - "3000:3000"   
+            - "80:80"   
             - "5000:5000"
         volumes:
             - ./confs/tyk_analytics.conf:/opt/tyk-dashboard/tyk_analytics.conf
